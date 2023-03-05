@@ -15,7 +15,7 @@
   var riddle2Solution: string = "";
   var riddle3Solution: string = "";
 
-  const trueSolution1 = "Faucet";
+  const trueSolution1 = "faucet";
   const trueSolution2 = "The Merge";
   const trueSolution3 = "EIP-4844";
 
@@ -74,6 +74,8 @@
     const s3: boolean = await $contracts["BASERiddle"].isOnLeaderboard(
       $signerAddress
     );
+
+    console.log(s1);
 
     currentChallenge.set(!s1 ? 1 : !s2 ? 2 : !s3 ? 3 : 4);
     //currentChallenge.set(4);
