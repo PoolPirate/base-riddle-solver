@@ -75,8 +75,8 @@
       $signerAddress
     );
 
-    //currentChallenge.set(!s1 ? 1 : !s2 ? 2 : !s3 ? 3 : 4);
-    currentChallenge.set(4);
+    currentChallenge.set(!s1 ? 1 : !s2 ? 2 : !s3 ? 3 : 4);
+    //currentChallenge.set(4);
   }
 </script>
 
